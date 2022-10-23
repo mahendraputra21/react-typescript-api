@@ -4,3 +4,11 @@ Build a React Typescript CRUD Application to consume Web API with Hooks and Axio
 - We can create, retrieve, update, delete Products.
 - There is a Search bar for finding Procuts by Name.
 
+How to run:
+```
+npm install
+```
+
+```
+npm run start
+```
