@@ -51,8 +51,8 @@ const TutorialsList: React.FC = () => {
       });
   };
 
-  const findByTitle = () => {
-    TutorialDataService.findByTitle(searchTitle)
+  const findByName = () => {
+    TutorialDataService.findByName(searchTitle)
       .then((response: any) => {
         setTutorials(response.data);
         setCurrentTutorial(null);
@@ -79,7 +79,7 @@ const TutorialsList: React.FC = () => {
             <button
               className="btn btn-outline-secondary"
               type="button"
-              onClick={findByTitle}
+              onClick={findByName}
             >
               Search
             </button>
