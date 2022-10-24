@@ -22,11 +22,11 @@ const remove = (id: any) => {
 };
 
 const removeAll = () => {
-  return http.delete<any>(`/tutorials`);
+  return http.delete<any>(`/Products`);
 };
 
-const findByTitle = (title: string) => {
-  return http.get<Array<ITutorialData>>(`/tutorials?title=${title}`);
+const findByName = (name: string) => {
+  return http.get<Array<ITutorialData>>(`/Products/Search?name=${name}`);
 };
 
 const TutorialService = {
@@ -36,7 +36,7 @@ const TutorialService = {
   update,
   remove,
   removeAll,
-  findByTitle,
+  findByName,
 };
 
 export default TutorialService;
