@@ -19,7 +19,7 @@ const AddTutorial: React.FC = () => {
 
   const saveTutorial = () => {
     var data = {
-      id:tutorial.id,
+      id: tutorial.id,
       name: tutorial.name,
       description: tutorial.description,
       price: tutorial.price
